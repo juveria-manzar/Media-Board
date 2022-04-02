@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="shortcut icon" href="#">
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <!-- C6.5  -->
+  <body
+    style="
+      background: url(https://previews.123rf.com/images/scanrail/scanrail1209/scanrail120900005/15141764-creative-photo-gallery-concept-collection-of-colorful-photos-on-background-made-from-wooden-planks-a.jpg) no-repeat center center fixed;
+      background-size:cover;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-evenly;
+    "
+  >
+    <!-- C6.1.A  -->
+    <button class="gallery-back" onclick="">BACK</button>
+    <script src="dbScript.js"></script>
+    <script>
+      //  C6.1.B
+      let backBtn = document.querySelector(".gallery-back");
+      backBtn.addEventListener("click", function () {
+        location.assign("index.html");
+      });
+      setTimeout(function () {
+        viewMedia();
+      }, 100);
+    </script>
+  </body>
+</html>
